@@ -1,0 +1,4 @@
+/home/cshome/m/mismith/COSC342/lab03-transforms/build/CMakeFiles/rebuild_cache.dir
+/home/cshome/m/mismith/COSC342/lab03-transforms/build/CMakeFiles/edit_cache.dir
+/home/cshome/m/mismith/COSC342/lab03-transforms/build/CMakeFiles/mytransform2D.dir
+/home/cshome/m/mismith/COSC342/lab03-transforms/build/CMakeFiles/transform2D.dir

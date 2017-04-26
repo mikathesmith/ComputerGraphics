@@ -1,0 +1,1 @@
+Please don't build the sources yourself ! Use CMake instead.

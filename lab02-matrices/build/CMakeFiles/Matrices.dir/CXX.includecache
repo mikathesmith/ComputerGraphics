@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Matrix.cpp
+Matrix.h
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Matrix.h
+assert.h
+-
+
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Matrix.h
+vector
+-
+iostream
+-
+
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Vector.cpp
+Vector.h
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Vector.h
+cmath
+-
+assert.h
+-
+
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Vector.h
+Matrix.h
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Matrix.h
+
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/matrixMain.cpp
+Matrix.h
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Matrix.h
+Vector.h
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/Vector.h
+iostream
+-
+

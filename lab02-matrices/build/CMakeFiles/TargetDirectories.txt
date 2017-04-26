@@ -1,0 +1,3 @@
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/build/CMakeFiles/rebuild_cache.dir
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/build/CMakeFiles/edit_cache.dir
+/home/cshome/m/mismith/Documents/COSC342/lab02-matrices/build/CMakeFiles/Matrices.dir

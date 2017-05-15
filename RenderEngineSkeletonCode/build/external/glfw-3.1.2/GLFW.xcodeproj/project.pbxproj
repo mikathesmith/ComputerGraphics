@@ -1,0 +1,1058 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		13B086D58220474D881CF0B6 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5DB723F30D664BADA61D0F47 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				3535709854C44AD0B12AED11 /* CMake Rules */,
+			);
+			dependencies = (
+				ECB9176F41AF472DACBF3435 /* PBXTargetDependency */,
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+		321F6068E8FC4A978254B1A9 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0BC64DDD11D448AEA473BF3C /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				28BF886718824F5585036884 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				1CBB6D6CF9804C198038ABA5 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		7E8A445C4204454E949AB00D /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D425B2E5E84049C6A8B8CFD6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				2BC12E574A3344A395D5A4B1 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		BB2DF8A2220041F0A768219C /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3BBF5B7BAF8E4EE8AB7B4A0A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				C04C346C2FC649CC8FD9AE61 /* CMake Rules */,
+			);
+			dependencies = (
+				07548AC1DAE64D02B2C1A310 /* PBXTargetDependency */,
+				75A95556A44443A59472C906 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		005B99016EB4482AAB1E1372 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 72F6A0B217744E1E9BE4125C /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_init.m */; };
+		009B600B743E492DA42E0CC0 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.m */ = {isa = PBXBuildFile; fileRef = 4C898004E09D4C498E301661 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.m */; };
+		18D4DAA84A1E499882A9DB8B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 2CC6EFE0B01C47389DC88AB7 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/monitor.c */; };
+		1EE00C0FBB4347D99BE403E0 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = D8B090045D714798BE13B579 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/CMakeLists.txt */; };
+		217D17B6E6504B8B8668E691 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = AF7C7A629DFB4C70BFD305E1 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/include/GLFW/glfw3.h */; };
+		2ACE5B8887E8497A90D60497 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.h */ = {isa = PBXBuildFile; fileRef = D08980F80292408B8B74288E /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.h */; };
+		319C0EC466F44F2A943FA776 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/mach_time.c */ = {isa = PBXBuildFile; fileRef = 59EE458D0671440FBC5A4C04 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/mach_time.c */; };
+		362E229223314BF2BE4B45F5 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 44EF89195543456EABF6C3DD /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src/glfw_config.h */; };
+		49B317C4C5C04C38A0F25999 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/input.c */ = {isa = PBXBuildFile; fileRef = 0BEA6E72AED54567BF8CEA3E /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/input.c */; };
+		5ADE7C01D9FD463F99727912 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = B548E19268D74D95B8E04616 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.m */; };
+		6B9C85B042E54B6391D97A01 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = E18C4FC939954761A796A44B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.h */; };
+		7CFF39AFC7FA4EEAA1A4EB41 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 08F434FAE45D41DAB5BB62C4 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_window.m */; };
+		88E67D1106814893A62F4474 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/init.c */ = {isa = PBXBuildFile; fileRef = BF8894E92D7842B7BB2A8931 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/init.c */; };
+		95DCCCA7FA394BECB1AD87E3 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 657F4D138916432FBABCD8CC /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_platform.h */; };
+		AD56CAED794E439785A244E0 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/internal.h */ = {isa = PBXBuildFile; fileRef = 023C5BF33AE24F4297752492 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/internal.h */; };
+		B36707C47F504AB795295F76 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = A160B088A9634F7AABE9F13B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.h */; };
+		C9B9025419EE45099C4023EB /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 003009DDEA784176BFEB9D9B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/include/GLFW/glfw3native.h */; };
+		D9445B8E440B4655AF07017F /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/window.c */ = {isa = PBXBuildFile; fileRef = 84B6D2A5885244A4B070AA15 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/window.c */; };
+		D9D502C91FD3479C9F3E1A67 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 2904DC9DFC114141A76138B3 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_monitor.m */; };
+		E2C849C7EAA2451FB91C7370 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/context.c */ = {isa = PBXBuildFile; fileRef = 450A03B1D5B0409EB384EC1D /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/context.c */; };
+		EE36956F706144E1913DD1BF /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = 6F36A05FF49F45439DD901A0 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0300366469524402ACAE5CEC /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		4370CB0EBCDC4A5FA62B8154 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		B8D6A3ADD6E94AF6A79237E1 = {
+			isa = PBXBuildStyle;
+		};
+		CAE11FECAC21427C9081D37F /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		CB10B5F06E644096A09DEFC1 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1EAA37BA7AC941BC8783B0CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF2C2D140474903A58182C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB2DF8A2220041F0A768219C;
+			remoteInfo = ALL_BUILD;
+		};
+		439CAB92A212427CB675E193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF2C2D140474903A58182C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E8A445C4204454E949AB00D;
+			remoteInfo = ZERO_CHECK;
+		};
+		74F0EF8AFFBB4AC28B6C1038 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF2C2D140474903A58182C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E8A445C4204454E949AB00D;
+			remoteInfo = ZERO_CHECK;
+		};
+		BD6FD4B1FB8949BCA2A0A0EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF2C2D140474903A58182C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B11077C00D594A41A55E418A;
+			remoteInfo = glfw;
+		};
+		FACA4E5B6F744F74874586B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF2C2D140474903A58182C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E8A445C4204454E949AB00D;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		003009DDEA784176BFEB9D9B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = include/GLFW/glfw3native.h; sourceTree = SOURCE_ROOT; };
+		023C5BF33AE24F4297752492 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = src/internal.h; sourceTree = SOURCE_ROOT; };
+		08F434FAE45D41DAB5BB62C4 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = src/cocoa_window.m; sourceTree = SOURCE_ROOT; };
+		0BEA6E72AED54567BF8CEA3E /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = src/input.c; sourceTree = SOURCE_ROOT; };
+		2904DC9DFC114141A76138B3 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = src/cocoa_monitor.m; sourceTree = SOURCE_ROOT; };
+		2CC6EFE0B01C47389DC88AB7 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = src/monitor.c; sourceTree = SOURCE_ROOT; };
+		3277CA59E6404FFFBAEC88D2 /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		44EF89195543456EABF6C3DD /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "../../build/external/glfw-3.1.2/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		450A03B1D5B0409EB384EC1D /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = src/context.c; sourceTree = SOURCE_ROOT; };
+		4C898004E09D4C498E301661 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = iokit_joystick.m; path = src/iokit_joystick.m; sourceTree = SOURCE_ROOT; };
+		52DDDB0C636644DA993F3631 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		59EE458D0671440FBC5A4C04 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/mach_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mach_time.c; path = src/mach_time.c; sourceTree = SOURCE_ROOT; };
+		5B0427820A274A27901425AE /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		657F4D138916432FBABCD8CC /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = src/cocoa_platform.h; sourceTree = SOURCE_ROOT; };
+		6F36A05FF49F45439DD901A0 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = src/posix_tls.c; sourceTree = SOURCE_ROOT; };
+		72F6A0B217744E1E9BE4125C /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = src/cocoa_init.m; sourceTree = SOURCE_ROOT; };
+		84B6D2A5885244A4B070AA15 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = src/window.c; sourceTree = SOURCE_ROOT; };
+		A112B5C52C734F8981E5D0B1 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A160B088A9634F7AABE9F13B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = src/posix_tls.h; sourceTree = SOURCE_ROOT; };
+		AF7C7A629DFB4C70BFD305E1 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = include/GLFW/glfw3.h; sourceTree = SOURCE_ROOT; };
+		B548E19268D74D95B8E04616 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = src/nsgl_context.m; sourceTree = SOURCE_ROOT; };
+		BF8894E92D7842B7BB2A8931 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = src/init.c; sourceTree = SOURCE_ROOT; };
+		D08980F80292408B8B74288E /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iokit_joystick.h; path = src/iokit_joystick.h; sourceTree = SOURCE_ROOT; };
+		D8B090045D714798BE13B579 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E18C4FC939954761A796A44B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = src/nsgl_context.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0368B742F8934564BE503A4E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		20C0A0CF84124F5BB1FB5467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3277CA59E6404FFFBAEC88D2 /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F74C9A22D764BABB02EBDB4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2F9147E82C1D4A5B81E5278C /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				2F74C9A22D764BABB02EBDB4 /* CMake Rules */,
+				52DDDB0C636644DA993F3631 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		2FA47999E43E4BE4892B50ED /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E82474961B1A42128B1CC557 /* uninstall */,
+				EE8ACEF87B8B443CB9955176 /* ALL_BUILD */,
+				2F9147E82C1D4A5B81E5278C /* ZERO_CHECK */,
+				D409A4EAFEA041F5A72C8823 /* GLFW3 */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		32C34D6774E84FE094D05880 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				72F6A0B217744E1E9BE4125C /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_init.m */,
+				2904DC9DFC114141A76138B3 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_monitor.m */,
+				08F434FAE45D41DAB5BB62C4 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_window.m */,
+				450A03B1D5B0409EB384EC1D /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/context.c */,
+				BF8894E92D7842B7BB2A8931 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/init.c */,
+				0BEA6E72AED54567BF8CEA3E /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/input.c */,
+				4C898004E09D4C498E301661 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.m */,
+				59EE458D0671440FBC5A4C04 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/mach_time.c */,
+				2CC6EFE0B01C47389DC88AB7 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/monitor.c */,
+				B548E19268D74D95B8E04616 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.m */,
+				6F36A05FF49F45439DD901A0 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.c */,
+				84B6D2A5885244A4B070AA15 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3A938115665544A190E89658 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				44EF89195543456EABF6C3DD /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src/glfw_config.h */,
+				AF7C7A629DFB4C70BFD305E1 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/include/GLFW/glfw3.h */,
+				003009DDEA784176BFEB9D9B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/include/GLFW/glfw3native.h */,
+				657F4D138916432FBABCD8CC /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_platform.h */,
+				023C5BF33AE24F4297752492 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/internal.h */,
+				D08980F80292408B8B74288E /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.h */,
+				E18C4FC939954761A796A44B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.h */,
+				A160B088A9634F7AABE9F13B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4F247509811148DB832BA19B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		666C76C8D3C9475B8B775DC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AF786D3865BC4F90A1A681FF = {
+			isa = PBXGroup;
+			children = (
+				2FA47999E43E4BE4892B50ED /* Sources */,
+				666C76C8D3C9475B8B775DC6 /* Resources */,
+				20C0A0CF84124F5BB1FB5467 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D409A4EAFEA041F5A72C8823 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				E0F578FC8F774D8287C56D06 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		E0F578FC8F774D8287C56D06 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				32C34D6774E84FE094D05880 /* Source Files */,
+				3A938115665544A190E89658 /* Header Files */,
+				D8B090045D714798BE13B579 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		E82474961B1A42128B1CC557 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				0368B742F8934564BE503A4E /* CMake Rules */,
+				A112B5C52C734F8981E5D0B1 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		EE8ACEF87B8B443CB9955176 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4F247509811148DB832BA19B /* CMake Rules */,
+				5B0427820A274A27901425AE /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B11077C00D594A41A55E418A /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EE7E61D9F634FAEAFF0FC2C /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				6CC133687B244A60A7A0C60D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C53E2E44E86E497DBA44E05B /* PBXTargetDependency */,
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 3277CA59E6404FFFBAEC88D2 /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CF2C2D140474903A58182C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0820;
+			};
+			buildConfigurationList = 110675A602F445169263468B /* Build configuration list for PBXProject "GLFW" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				CB10B5F06E644096A09DEFC1 /* Debug */,
+				0300366469524402ACAE5CEC /* Release */,
+				CAE11FECAC21427C9081D37F /* MinSizeRel */,
+				4370CB0EBCDC4A5FA62B8154 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = AF786D3865BC4F90A1A681FF;
+			projectDirPath = "../../../external/glfw-3.1.2";
+			projectRoot = "";
+			targets = (
+				BB2DF8A2220041F0A768219C /* ALL_BUILD */,
+				7E8A445C4204454E949AB00D /* ZERO_CHECK */,
+				321F6068E8FC4A978254B1A9 /* install */,
+				13B086D58220474D881CF0B6 /* uninstall */,
+				B11077C00D594A41A55E418A /* glfw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28BF886718824F5585036884 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2 -f /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		2BC12E574A3344A395D5A4B1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2 -f /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3535709854C44AD0B12AED11 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2 -f /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		76289C5EBEDC45359D36708D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B0EACE4B5E5E4C0F8BFF222A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C04C346C2FC649CC8FD9AE61 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2 -f /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D0A39251C4E2474187A7483C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		EE7E9E651DC2403695167209 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CC133687B244A60A7A0C60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				005B99016EB4482AAB1E1372 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_init.m */,
+				D9D502C91FD3479C9F3E1A67 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_monitor.m */,
+				7CFF39AFC7FA4EEAA1A4EB41 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/cocoa_window.m */,
+				E2C849C7EAA2451FB91C7370 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/context.c */,
+				88E67D1106814893A62F4474 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/init.c */,
+				49B317C4C5C04C38A0F25999 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/input.c */,
+				009B600B743E492DA42E0CC0 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/iokit_joystick.m */,
+				319C0EC466F44F2A943FA776 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/mach_time.c */,
+				18D4DAA84A1E499882A9DB8B /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/monitor.c */,
+				5ADE7C01D9FD463F99727912 /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/nsgl_context.m */,
+				EE36956F706144E1913DD1BF /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/posix_tls.c */,
+				D9445B8E440B4655AF07017F /* /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07548AC1DAE64D02B2C1A310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E8A445C4204454E949AB00D /* ZERO_CHECK */;
+			targetProxy = 439CAB92A212427CB675E193 /* PBXContainerItemProxy */;
+		};
+		1CBB6D6CF9804C198038ABA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB2DF8A2220041F0A768219C /* ALL_BUILD */;
+			targetProxy = 1EAA37BA7AC941BC8783B0CE /* PBXContainerItemProxy */;
+		};
+		75A95556A44443A59472C906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B11077C00D594A41A55E418A /* glfw */;
+			targetProxy = BD6FD4B1FB8949BCA2A0A0EE /* PBXContainerItemProxy */;
+		};
+		C53E2E44E86E497DBA44E05B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E8A445C4204454E949AB00D /* ZERO_CHECK */;
+			targetProxy = 74F0EF8AFFBB4AC28B6C1038 /* PBXContainerItemProxy */;
+		};
+		ECB9176F41AF472DACBF3435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E8A445C4204454E949AB00D /* ZERO_CHECK */;
+			targetProxy = FACA4E5B6F744F74874586B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02C4979D79BE42A88E2D8F9C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0EDF9BB4FBB7407BBCD9FA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1BB0F54EDA9748BE82FDCC02 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/build";
+			};
+			name = RelWithDebInfo;
+		};
+		28626AB9AA384B29944B37F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TW_STATIC,TW_NO_LIB_PRAGMA,TW_NO_DIRECT3D,GLEW_STATIC,_CRT_SECURE_NO_WARNINGS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		28B74920DA904E1CBA90FA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/build";
+			};
+			name = Release;
+		};
+		2C1C9AAE66D64F1F950CDFEB /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2D000A16753F48E7A0059D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TW_STATIC,TW_NO_LIB_PRAGMA,TW_NO_DIRECT3D,GLEW_STATIC,_CRT_SECURE_NO_WARNINGS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		38682E8400BA4CF08E34F733 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3B90B296BF434E09BA1BE090 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TW_STATIC,TW_NO_LIB_PRAGMA,TW_NO_DIRECT3D,GLEW_STATIC,_CRT_SECURE_NO_WARNINGS,_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src","/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -I/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src -I/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src    -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3DE9F890D9454F0D98C4D784 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4BA66737CCF34B2683706311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TW_STATIC,TW_NO_LIB_PRAGMA,TW_NO_DIRECT3D,GLEW_STATIC,_CRT_SECURE_NO_WARNINGS,_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src","/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -I/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src -I/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src    -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4D0272800BA742AA8FC36AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		589E6C063DBC48BE97470D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5F64AFDFAA59414A8A0E6A9E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TW_STATIC,TW_NO_LIB_PRAGMA,TW_NO_DIRECT3D,GLEW_STATIC,_CRT_SECURE_NO_WARNINGS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		68101A8DE6B44AC689BD2802 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6A24599A348F4F268FB213A7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/build";
+			};
+			name = MinSizeRel;
+		};
+		A991002324EB451092EBC987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		ACD7C758D7954AF3AFE7F1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TW_STATIC,TW_NO_LIB_PRAGMA,TW_NO_DIRECT3D,GLEW_STATIC,_CRT_SECURE_NO_WARNINGS,_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src","/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -I/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src -I/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src    -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B5F1BA8397F54094B0DE02F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/build";
+			};
+			name = Debug;
+		};
+		B5F34BEA072140A3BBC21AB5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TW_STATIC,TW_NO_LIB_PRAGMA,TW_NO_DIRECT3D,GLEW_STATIC,_CRT_SECURE_NO_WARNINGS,_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src","/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -I/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/glfw-3.1.2/src -I/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src    -Wall";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CD5F9376DC0B4DB4ABC3E621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D515209D548341A3971CCCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		EABE58E048FA4C74971AF1CF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FA96F57F2F214919A391599E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",TW_STATIC,TW_NO_LIB_PRAGMA,TW_NO_DIRECT3D,GLEW_STATIC,_CRT_SECURE_NO_WARNINGS);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/build/external/glfw-3.1.2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BC64DDD11D448AEA473BF3C /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EDF9BB4FBB7407BBCD9FA37 /* Debug */,
+				589E6C063DBC48BE97470D9E /* Release */,
+				2C1C9AAE66D64F1F950CDFEB /* MinSizeRel */,
+				3DE9F890D9454F0D98C4D784 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		110675A602F445169263468B /* Build configuration list for PBXProject "GLFW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5F1BA8397F54094B0DE02F3 /* Debug */,
+				28B74920DA904E1CBA90FA55 /* Release */,
+				6A24599A348F4F268FB213A7 /* MinSizeRel */,
+				1BB0F54EDA9748BE82FDCC02 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3BBF5B7BAF8E4EE8AB7B4A0A /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D515209D548341A3971CCCBA /* Debug */,
+				CD5F9376DC0B4DB4ABC3E621 /* Release */,
+				68101A8DE6B44AC689BD2802 /* MinSizeRel */,
+				EABE58E048FA4C74971AF1CF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4EE7E61D9F634FAEAFF0FC2C /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA66737CCF34B2683706311 /* Debug */,
+				ACD7C758D7954AF3AFE7F1EC /* Release */,
+				3B90B296BF434E09BA1BE090 /* MinSizeRel */,
+				B5F34BEA072140A3BBC21AB5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5DB723F30D664BADA61D0F47 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D000A16753F48E7A0059D14 /* Debug */,
+				28626AB9AA384B29944B37F3 /* Release */,
+				5F64AFDFAA59414A8A0E6A9E /* MinSizeRel */,
+				FA96F57F2F214919A391599E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D425B2E5E84049C6A8B8CFD6 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0272800BA742AA8FC36AB2 /* Debug */,
+				A991002324EB451092EBC987 /* Release */,
+				02C4979D79BE42A88E2D8F9C /* MinSizeRel */,
+				38682E8400BA4CF08E34F733 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CF2C2D140474903A58182C6 /* Project object */;
+}

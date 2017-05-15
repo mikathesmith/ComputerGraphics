@@ -1,0 +1,7 @@
+dependencies: \
+  /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/assimp-3.0.1270/contrib/poly2tri/poly2tri/sweep/cdt.cc \
+  /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/assimp-3.0.1270/contrib/poly2tri/poly2tri/sweep/cdt.h \
+  /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/assimp-3.0.1270/contrib/poly2tri/poly2tri/sweep/advancing_front.h \
+  /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/assimp-3.0.1270/contrib/poly2tri/poly2tri/sweep/../common/shapes.h \
+  /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/assimp-3.0.1270/contrib/poly2tri/poly2tri/sweep/sweep_context.h \
+  /home/cshome/m/mismith/COSC342/RenderEngineSkeletonCode/external/assimp-3.0.1270/contrib/poly2tri/poly2tri/sweep/sweep.h

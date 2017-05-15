@@ -127,11 +127,12 @@ int main( void )
     myTriangle->setShader(shader);
     //Triangle object then added to our simple scenegraph (rendered in the main loop) 
     Scene* myScene = new Scene();
+    myTriangle->setTranslate(glm::vec3(-1,0,1));
     myScene->addObject(myTriangle);
     
     Triangle* secondTriangle = new Triangle();
     secondTriangle->setShader(shader);
-    secondTriangle->setTranslate(glm::vec3(0,1,0)); 
+    secondTriangle->setTranslate(glm::vec3(1,0,1));
     myScene->addObject(secondTriangle);
     
     Camera* myCamera = new Camera();

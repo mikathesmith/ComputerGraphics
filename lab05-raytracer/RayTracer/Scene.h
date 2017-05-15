@@ -177,6 +177,10 @@ public:
 	Colour backgroundColour; //!< Colour for any Ray that does not hit an Object.
 
 	Colour ambientLight; //!< Ambient light level and Colour in the Scene.
+	
+	Colour diffuseLight; 
+	
+	Colour specularLight; 
 
 	unsigned int maxRayDepth; //!< Maximum number of reflected Rays to trace.
 
@@ -213,9 +217,9 @@ private:
 
 	/** \brief Compute the Colour seen by a Ray in the Scene.
 	 * 
-	 * The Colour seen by a Ray depends on the ligthing, the first Object that it
+	 * The Colour seen by a Ray depends on the lightning, the first Object that it
 	 * hits, and the Material properties of that Object. This method performs these
-	 * computations and comptues the observed Colour. For some Objects it may be necessary
+	 * computations and computes the observed Colour. For some Objects it may be necessary
 	 * to cast other Rays to deal with reflections. This can conceivably recurse forever,
 	 * so a maximum number of reflections is set.
 	 *
@@ -237,6 +241,10 @@ private:
 	 * \return The Colour observed by the viewRay.
 	 */
 	Colour computeColour(const Ray& viewRay, unsigned int rayDepth = 0) const;
+	
+	
+	
+	
 
 };
 

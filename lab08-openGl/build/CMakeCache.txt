@@ -213,7 +213,7 @@ GLEW_1130_LIB_DEPENDS:STATIC=general;/Applications/Xcode.app/Contents/Developer/
 GLFW_BINARY_DIR:STATIC=/home/cshome/m/mismith/COSC342/lab08-openGl/build/external/glfw-3.1.2
 
 //Build the GLFW documentation
-GLFW_BUILD_DOCS:BOOL=ON
+GLFW_BUILD_DOCS:BOOL=OFF
 
 //Build the GLFW example programs
 GLFW_BUILD_EXAMPLES:BOOL=OFF

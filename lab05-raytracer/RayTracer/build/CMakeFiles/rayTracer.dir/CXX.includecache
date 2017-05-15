@@ -179,6 +179,8 @@ Display.h
 /home/cshome/m/mismith/COSC342/lab05-raytracer/RayTracer/Display.h
 utility.h
 /home/cshome/m/mismith/COSC342/lab05-raytracer/RayTracer/utility.h
+math.h
+-
 
 /home/cshome/m/mismith/COSC342/lab05-raytracer/RayTracer/Scene.h
 memory

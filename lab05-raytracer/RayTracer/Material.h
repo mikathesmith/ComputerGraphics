@@ -41,7 +41,7 @@ public:
 	Colour diffuseColour;     //!< Colour of Material under direct white light. Usually, but not always, the same as ambientColour.
 
 	Colour specularColour;    //!< Colour of Material's specular highlights. If this is zero then there are no highlights.
-	double specularExponent;  //!< 'Hardness' of Material's specular hightlights - high values give small, sharp highlights.
+	double specularExponent;  //!< 'Hardness' of Material's specular highlights - high values give small, sharp highlights.
 
 	Colour mirrorColour;      //!< Colour of reflected rays under direct white light. If this is zero then there are no reflections.
 };

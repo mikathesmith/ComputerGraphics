@@ -3,7 +3,7 @@
 #include "Colour.h"
 #include "Display.h"
 #include "utility.h"
-
+#include <math.h> 
 /*This is the scene to be ray traced. It collects Object, LightSource and Camera data together for rendering.
 #It also includes basic info about the environment (backgroundColour, ambientLight), the image to be produced
 #(renderWidth, renderHeight, filename) and the max number of reflections allowed (maxRayDepth)
@@ -12,7 +12,7 @@
 #computing the Colour from a Ray
 */
 
-Scene::Scene() : backgroundColour(0,0,0), ambientLight(0,0,0), maxRayDepth(3), renderWidth(800), renderHeight(600), filename("render.png"), camera_(), objects_(), lights_() {
+Scene::Scene() : backgroundColour(0,0,0), ambientLight(0,0,0), diffuseLight(0,0,0), maxRayDepth(3), renderWidth(800), renderHeight(600), filename("render.png"), camera_(), objects_(), lights_() {
 
 }
 
@@ -57,18 +57,38 @@ RayIntersection Scene::intersect(const Ray& ray) const {
 	return firstHit;
 }
 
+//The Colour seen by a  Ray depends on the lighting, the first Object that it hits, and the
+//Material properties of that Object. This method performs these computations and computes the
+//observed Colour. For some objects it may be necessary to cast other Rays to deal with
+//reflections. This can recurse forever so is limited by a max number of reflections. 
 Colour Scene::computeColour(const Ray& viewRay, unsigned int rayDepth) const {
 	RayIntersection hitPoint = intersect(viewRay);
+	
+	//If ray does not hit any object, then the scene's background colour should be returned
 	if (hitPoint.distance == infinity) {
 		return backgroundColour;
 	}
-
+	
+    //This line multiplies ambient light level and object colour 
 	Colour hitColour = ambientLight * hitPoint.material.ambientColour;
+	
+	//Next we need to compute diffuse light level and object colour multiplied by surface normal
+	//at the point and unit vector from surface normal at the point 
+	//Colour hitColour = hitPoint.material.ambientColour; 
+	
 		
-	// Code to do better lighting, shadows, and reflections goes here.
+			// Code to do better lighting, shadows, and reflections goes here.
     for (auto light: lights_) {
         // Compute the influence of this light on the appearance of the hit object.
+        
+        //normal * length of vector towards light -
+        //distance * vector between hitpoint and light  - light.location and hitPoint.point
+        hitColour+= light->colour * ((hitPoint.material.diffuseColour * (hitPoint.normal)) + 
+        (hitPoint.material.specularColour * pow((hitPoint.distance), hitPoint.material.specularExponent))); 
     }
+    
+    //length vector is vector between hit point and light
+    //viewpoint - backwards along the ray 
     
 	return hitColour;
 }

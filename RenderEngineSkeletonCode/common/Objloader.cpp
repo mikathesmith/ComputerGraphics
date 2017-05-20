@@ -101,12 +101,12 @@ bool loadOBJMTL(
     for(int i=0; i < scene->mNumMaterials; i++){
    // if(scene->mNumMaterials >0){
         Material* newMat = new Material();
-        
-        if(scene->mMaterials[i]!=NULL){
+       
+        aiString texpath;
+      //  if(scene->mMaterials[i]!=NULL){
             //Where does this colour come from? should it not come from the MTL file?
             aiColor3D color (2.f,0.2f,0.8f); //this will be overridden by MTL file
-            
-            
+        
             scene->mMaterials[i]->Get(AI_MATKEY_COLOR_DIFFUSE, color);
             newMat->setDiffuseColour(glm::vec3(color[0],color[1],color[2]));
             
@@ -114,18 +114,24 @@ bool loadOBJMTL(
             newMat->setAmbientColour(glm::vec3(color[0],color[1],color[2]));
             
             scene->mMaterials[i]->Get(AI_MATKEY_COLOR_SPECULAR, color);
-        //    newMat->setAmbientColour(glm::vec3(color[0],color[1],color[2]));
-            
-             scene->mMaterials[i]->Get(AI_MATKEY_COLOR_TRANSPARENT, color); //d value
-            
-           // scene->mMaterials[i]->GetTexture((aiTextureType_DIFFUSE, 0, &texpath, NULL, NULL, NULL, NULL, NULL) == AI_SUCCESS);
-            //need to apply it
-            //setAmbientColour
-            //SetSpecularColour using specular exponent
-            
-            //set transparency/opacity
+            newMat->setSpecularColour(glm::vec3(color[0],color[1],color[2]));
+
+            //Is the specular exponent seperate?
+        
+            scene->mMaterials[i]->Get(AI_MATKEY_COLOR_TRANSPARENT, color); //d value
+     //       newMat->setOpacity();
+        
+        
+        
+        //read in texture settings for the diffuse texture map - map_Kd
+        //where does texpath come from?
+        if(scene->mMaterials[i]->GetTexture(aiTextureType_DIFFUSE, 0, &texpath, NULL, NULL, NULL, NULL, NULL)== AI_SUCCESS){
+            newMat->setTextureName(texpath.C_Str());
         }
+
+       
         outputmesh->addMaterial(newMat);
+     //   }
     }
     // The "scene" pointer will be deleted automatically by "importer"
     

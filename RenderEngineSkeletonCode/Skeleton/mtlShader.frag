@@ -20,7 +20,11 @@ uniform vec4 diffuseColor;
 uniform vec4 ambientColor;
 uniform vec4 specularColor;
 
-const float ns = 1.0; //specular exponent
+uniform float opacity;
+
+const float ns = 0.2; //set to opacity?
+
+//const float ns = opacity; //specular exponent
 
 //Do I have to do this for each light? 
 void main(){
@@ -28,9 +32,9 @@ void main(){
     // Material properties
     vec3 textureVal = texture(myTextureSampler, UV).rgb;  //texture map will be used for diffuse and ambient texture map, converts
     //the vec4 into a vec3!!
-    vec3 ambientMatColor = vec3(0.6,0.6,0.6); //find these somehow - these will just be replaced! right??
-    vec3 diffuseMatColor = vec3(1.0,1.0,1.0);
-    vec3 specularMatColor = vec3(0.3,0.3,0.3);
+    vec3 ambientMatColor = vec3(0,0,0); //find these somehow - these will just be replaced! right??
+    vec3 diffuseMatColor = vec3(0,1.0,1.0);
+    vec3 specularMatColor = vec3(1,1,0);
   
     
     // Distance to the light we could use this to diminish the amount of light the further away but we do not for simplification
@@ -64,7 +68,7 @@ void main(){
     vec3 ambientComponent = ambientColor.rgb * ambientMatColor *  textureVal; //for simplification we reuse the diffuse texture map for the ambient texture map
     vec3 specularComponent = specularColor.rgb * specularMatColor * pow(cosAlpha, ns);
     
-    color.rgb = ambientComponent.rgb + diffuseComponent.rgb + specularComponent.rgb;
+    color.rgb = ambientComponent.rgb + diffuseComponent.rgb+ specularComponent.rgb;
     //color.a = transparency - need to enable blending using glEnable and GL_BLEND, and
     //setting up the way to use blend by using glBlendFunc - GL_SRC_ALPHA, GL_ONE_MINUS
     //_SRC_ALPHA? - use AI_MATKEY_OPACITY

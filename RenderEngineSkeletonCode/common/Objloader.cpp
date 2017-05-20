@@ -116,10 +116,10 @@ bool loadOBJMTL(
             scene->mMaterials[i]->Get(AI_MATKEY_COLOR_SPECULAR, color);
             newMat->setSpecularColour(glm::vec3(color[0],color[1],color[2]));
 
-            //Is the specular exponent seperate?
+            //Is the specular exponent seperate? ns?
         
-            scene->mMaterials[i]->Get(AI_MATKEY_COLOR_TRANSPARENT, color); //d value
-     //       newMat->setOpacity();
+          //  scene->mMaterials[i]->Get(AI_MATKEY_COLOR_TRANSPARENT, color); //d value
+            newMat->setOpacity(scene->mMaterials[i]->Get(AI_MATKEY_OPACITY, color));
         
         
         

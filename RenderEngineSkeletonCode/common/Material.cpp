@@ -29,6 +29,7 @@
     void Material::setOpacity(float opacity){
         m_opacity = opacity;
     }
+
     void Material::setShininess(float shininess){
         m_shininess = shininess;
     }

@@ -47,6 +47,7 @@ class MTLShader: public Shader{
         //! setOpacity
         /*! Set amount of opacity */
         void setOpacity(float opacity);
+        void setShininess(float shininess);
         //! setRenderMode
         /*! Set the render mode.*/
         void setRenderMode(float renderMode);
@@ -65,6 +66,7 @@ class MTLShader: public Shader{
         GLuint m_lightPosID;    //!< id of the position of the light source
         glm::vec3 m_lightPos;   //!< position of the light source
         float m_opacity;        //!< opacity of the material
+        float m_shininess; 
 	
     
 };

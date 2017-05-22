@@ -8,7 +8,7 @@ in vec3 eyeDirectionCameraspace; // eye direction in camera space
 in vec3 lightDirectionCameraspace; // light direction in camera space
 
 // Ouput data
-out vec3 color;
+out vec4 color;
 
 // Values that stay constant for the whole mesh.
 uniform sampler2D myTextureSampler;
@@ -20,23 +20,21 @@ uniform vec4 diffuseColor;
 uniform vec4 ambientColor;
 uniform vec4 specularColor;
 
+vec3 ambientLightColor = vec3(1.0); //find these somehow - these will just be replaced! right??
+vec3 diffuseLightColor = vec3(1.0);
+vec3 specularLightColor = vec3(1.0);
+
 uniform float opacity;
+uniform float shininess;
+uniform float renderMode; //depending on this number, change what we do to the color!
 
-const float ns = 0.2; //set to opacity?
-
-//const float ns = opacity; //specular exponent
-
-//Do I have to do this for each light? 
 void main(){
+    
     
     // Material properties
     vec3 textureVal = texture(myTextureSampler, UV).rgb;  //texture map will be used for diffuse and ambient texture map, converts
     //the vec4 into a vec3!!
-    vec3 ambientMatColor = vec3(0,0,0); //find these somehow - these will just be replaced! right??
-    vec3 diffuseMatColor = vec3(0,1.0,1.0);
-    vec3 specularMatColor = vec3(1,1,0);
-  
-    
+
     // Distance to the light we could use this to diminish the amount of light the further away but we do not for simplification
     float distance = length( lightPosWorldspace - posWorldspace );
     
@@ -51,7 +49,7 @@ void main(){
     //  - light is at the vertical of the triangle -> 1
     //  - light is perpendicular to the triangle -> 0
     //  - light is behind the triangle -> 0
-    float cosTheta = clamp( dot( N,L), 0,1 );
+    float cosTheta = clamp( dot( N,L), 0.0, 1.0 );
     
     // Eye vector (towards the camera)
     vec3 E = normalize(eyeDirectionCameraspace);
@@ -62,18 +60,24 @@ void main(){
     // The cosine is clamped to contrain it between 0 and 1 to avoid negative values
     //  - Looking into the reflection -> 1
     //  - Looking elsewhere -> < 1
-    float cosAlpha = clamp( dot( E,R ), 0,1 );
     
-    vec3 diffuseComponent = diffuseColor.rgb * diffuseMatColor * textureVal * cosTheta;
-    vec3 ambientComponent = ambientColor.rgb * ambientMatColor *  textureVal; //for simplification we reuse the diffuse texture map for the ambient texture map
-    vec3 specularComponent = specularColor.rgb * specularMatColor * pow(cosAlpha, ns);
-    
-    color.rgb = ambientComponent.rgb + diffuseComponent.rgb+ specularComponent.rgb;
-    //color.a = transparency - need to enable blending using glEnable and GL_BLEND, and
-    //setting up the way to use blend by using glBlendFunc - GL_SRC_ALPHA, GL_ONE_MINUS
-    //_SRC_ALPHA? - use AI_MATKEY_OPACITY
-    
-    
+    //Halfway vector for Blinn-Phong model
+    vec3 H = normalize(L+E);
+    float cosAlpha = clamp( dot( H, N ), 0, 1);
+
+   vec3 diffuseComponent = diffuseColor.rgb * diffuseLightColor * textureVal * cosTheta;
+   vec3 ambientComponent = ambientColor.rgb * ambientLightColor *  textureVal; //for simplification we reuse the diffuse texture map for the ambient texture map
+   vec3 specularComponent = specularColor.rgb * specularLightColor * pow(cosAlpha, shininess);
+   
+   if(renderMode == 2){
+       //apply some filter in here!
+       color.rgb = ambientComponent.rgb;
+       
+   }else{
+       color.rgb = ambientComponent.rgb + diffuseComponent.rgb+ specularComponent.rgb;
+   }
+
+    color.a = opacity;
 }
 
 

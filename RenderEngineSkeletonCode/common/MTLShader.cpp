@@ -43,6 +43,12 @@ void MTLShader::setLightPos(glm::vec3 lightPos){
     m_lightPos= lightPos;
 }
 
+void MTLShader::setShininess(float shininess){
+    m_shininess = shininess;
+    GLint shininessID = glGetUniformLocation(programID, "shininess");
+    glProgramUniform1f(programID, shininessID, m_shininess);
+}
+
 void MTLShader::setDiffuse(glm::vec3 diffuse){
     m_diffuseColor= glm::vec4(diffuse[0],diffuse[1],diffuse[2],1.0);
     GLint diffusecolorID = glGetUniformLocation(programID, "diffuseColor");
@@ -70,9 +76,8 @@ void MTLShader::setOpacity(float opacity){
 
 void MTLShader::setRenderMode(float renderMode){
     m_renderMode= renderMode;
-    
-    //Can use this to switch implementation of a special effect for the last task
-    //implement in fragment shader
+    GLint renderModeID = glGetUniformLocation(programID, "renderMode");
+    glProgramUniform1f(programID, renderModeID, m_renderMode);
 }
 
 void MTLShader::bind(){

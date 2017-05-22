@@ -40,7 +40,6 @@ void Group::setRenderMode(float rendermode){
             if(shader!=NULL)
                 shader->setRenderMode(rendermode);
         }
-    
 }
 
 void Group::init(){
@@ -58,7 +57,7 @@ void Group::setupShaders(){
 	//TODO: Do this for all meshes, add for loop 
 	//if(meshes.size()>0){
     for(int i=0; i< meshes.size();i++){
-		int matIndex = 0; // I changed this from 0 to i. TODO: get the correct material index from obj file
+		int matIndex = meshes[i]->getMatIndex(); // I changed this from 0 to i. TODO: get the correct material index from obj file
         
         Material* mat = getMaterial(matIndex);
         Shader* shader = NULL;

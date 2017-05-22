@@ -104,6 +104,11 @@ int main( int argc, char *argv[] )
     glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
     // Enable depth test
     glEnable(GL_DEPTH_TEST);
+    
+    //Enabling transparency 
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
     // Accept fragment if it closer to the camera than the former one
     glDepthFunc(GL_LESS);
     
@@ -125,11 +130,10 @@ int main( int argc, char *argv[] )
     Scene* myScene = new Scene();
     
     // Read our .obj files - this is hard coded for testing - you can pass obj file names as arguments instead to make the code more flexible
-    
-    if(argc==1){
+  
         // if nothing specified we load default objects
         // person obj
-        Group* person = new Group();
+       Group* person = new Group();
         bool res = loadOBJMTL("person.obj", person);
         person->init();
         
@@ -138,25 +142,18 @@ int main( int argc, char *argv[] )
         res = loadOBJMTL("earthobj.obj", sphere);
         sphere->init();
         
+     /* Group* iphone = new Group();
+        res = loadOBJMTL("iphone.obj", iphone);
+        iphone->init();*/
+        
         //add objects to the scene
         myScene->addObject(person);
         myScene->addObject(sphere);
+       // myScene->addObject(iphone);
         
-    }
-    else{
         
-        for (int a = 1; a < argc; ++a) {
-            Group* objGroup = new Group();
-            bool res = loadOBJMTL(argv[a], objGroup);
-            if(res){
-                objGroup->init();
-                //add objects to the scene
-                myScene->addObject(objGroup);
-            }
-        }
-    }
-    
-    
+
+  
     Camera* myCamera = new Camera();
     myCamera->setPosition(glm::vec3(0,100,200)); //set camera to show the models
     Controls* myControls = new Controls(myCamera);
@@ -166,6 +163,15 @@ int main( int argc, char *argv[] )
     while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS && glfwWindowShouldClose(window) == 0 ){// Clear the screen
         // Clear the screen
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Also clear the depth buffer!!!
+        
+        if(glfwGetKey(window, GLFW_KEY_2)==GLFW_PRESS){
+            //set render mode to 2
+            sphere->setRenderMode(2);
+        }
+        if(glfwGetKey(window, GLFW_KEY_1)==GLFW_PRESS){
+            //set render mode to 2
+            sphere->setRenderMode(1);
+        }
         
         // update camera controls with mouse input
         myControls->update();

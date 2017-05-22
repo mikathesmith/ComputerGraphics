@@ -41,11 +41,13 @@ bool loadOBJMTL(
     //f(scene->mNumMeshes>0){
     for(int i=0; i < scene->mNumMeshes; i++){
         int meshindex = i; //i
+        //How assimp reads the data from the obj file.
         std::vector<unsigned short> indices;
         std::vector<glm::vec3> indexed_vertices;
         std::vector<glm::vec2> indexed_uvs;
         std::vector<glm::vec3> indexed_normals;
         
+        //Create our mesh and set of vertices.
         aiMesh* mesh = scene->mMeshes[meshindex];
         
         indexed_vertices.reserve(mesh->mNumVertices);
@@ -69,7 +71,6 @@ bool loadOBJMTL(
             aiVector3D n = mesh->mNormals[i];
             indexed_normals.push_back(glm::vec3(n.x, n.y, n.z));
         }
-        
         
         // Fill face indices
         indices.reserve(3*mesh->mNumFaces);
@@ -115,17 +116,24 @@ bool loadOBJMTL(
             
             scene->mMaterials[i]->Get(AI_MATKEY_COLOR_SPECULAR, color);
             newMat->setSpecularColour(glm::vec3(color[0],color[1],color[2]));
+        
+            
 
             //Is the specular exponent seperate? ns?
+        //create a new float for opacity and shininess
+        //setShininess
+        float opacity = 0.0;
+        scene->mMaterials[i]->Get(AI_MATKEY_OPACITY, opacity);
         
-          //  scene->mMaterials[i]->Get(AI_MATKEY_COLOR_TRANSPARENT, color); //d value
-            newMat->setOpacity(scene->mMaterials[i]->Get(AI_MATKEY_OPACITY, color));
+            newMat->setOpacity(opacity);
         
-        
-        
+            float shininess = 0.0;
+        scene->mMaterials[i]->Get(AI_MATKEY_SHININESS, shininess);
+            newMat->setShininess(shininess);
+
         //read in texture settings for the diffuse texture map - map_Kd
         //where does texpath come from?
-        if(scene->mMaterials[i]->GetTexture(aiTextureType_DIFFUSE, 0, &texpath, NULL, NULL, NULL, NULL, NULL)== AI_SUCCESS){
+        if(scene->mMaterials[i]->GetTexture(aiTextureType_DIFFUSE, 0, &texpath, NULL, NULL, NULL, NULL, NULL) == AI_SUCCESS){
             newMat->setTextureName(texpath.C_Str());
         }
 

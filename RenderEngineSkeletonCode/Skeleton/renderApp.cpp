@@ -7,7 +7,6 @@
  *
  */
 
-
 // Include standard headers
 #include <stdio.h>
 #include <stdlib.h>
@@ -40,8 +39,6 @@ using namespace glm;
 #include <common/Group.hpp>
 #include <common/Objloader.hpp>
 
-
-
 bool initWindow(std::string windowName){
     
     // Initialise GLFW
@@ -71,9 +68,6 @@ bool initWindow(std::string windowName){
     
 }
 
-
-
-
 int main( int argc, char *argv[] )
 {
     
@@ -102,10 +96,11 @@ int main( int argc, char *argv[] )
     
     // Dark blue background
     glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
+    
     // Enable depth test
     glEnable(GL_DEPTH_TEST);
     
-    //Enabling transparency 
+    //Enabling blending of transparency
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
@@ -114,8 +109,7 @@ int main( int argc, char *argv[] )
     
     // Cull triangles which normal is not towards the camera
     glEnable(GL_CULL_FACE);
-    
-    
+
     //create a Vertex Array Object and set it as the current one
     //we will not go into detail here. but this can be used to optimise the performance by storing all of the state needed to supply vertex data
     GLuint VertexArrayID;
@@ -130,8 +124,7 @@ int main( int argc, char *argv[] )
     Scene* myScene = new Scene();
     
     // Read our .obj files - this is hard coded for testing - you can pass obj file names as arguments instead to make the code more flexible
-  
-        // if nothing specified we load default objects
+
         // person obj
        Group* person = new Group();
         bool res = loadOBJMTL("person.obj", person);
@@ -150,10 +143,7 @@ int main( int argc, char *argv[] )
         myScene->addObject(person);
         myScene->addObject(sphere);
        // myScene->addObject(iphone);
-        
-        
-
-  
+    
     Camera* myCamera = new Camera();
     myCamera->setPosition(glm::vec3(0,100,200)); //set camera to show the models
     Controls* myControls = new Controls(myCamera);
@@ -163,14 +153,17 @@ int main( int argc, char *argv[] )
     while( glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS && glfwWindowShouldClose(window) == 0 ){// Clear the screen
         // Clear the screen
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Also clear the depth buffer!!!
+
+        if(glfwGetKey(window, GLFW_KEY_1)==GLFW_PRESS){
+            //set render mode to 1 for normal illumination
+            person->setRenderMode(1);
+            sphere->setRenderMode(1);
+        }
         
         if(glfwGetKey(window, GLFW_KEY_2)==GLFW_PRESS){
-            //set render mode to 2
+            //set render mode to 2 for special effect filter
+            person->setRenderMode(2);
             sphere->setRenderMode(2);
-        }
-        if(glfwGetKey(window, GLFW_KEY_1)==GLFW_PRESS){
-            //set render mode to 2
-            sphere->setRenderMode(1);
         }
         
         // update camera controls with mouse input
@@ -184,9 +177,7 @@ int main( int argc, char *argv[] )
         
     }
     
-    
     glDeleteVertexArrays(1, &VertexArrayID);
-    //delete texture;
     delete myScene;
     delete myCamera;
     // Close OpenGL window and terminate GLFW

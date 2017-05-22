@@ -26,7 +26,20 @@ vec3 specularLightColor = vec3(1.0);
 
 uniform float opacity;
 uniform float shininess;
-uniform float renderMode; //depending on this number, change what we do to the color!
+uniform float renderMode; //depending on this number, change what we do to the color.
+
+//Method which applies a sepia tone filter to the object.
+vec4 SepiaFilter(in vec4 color){
+   // sepiaR = color.rgb * 0.393; //integer value?
+   // int sepiaR = color.r * 0.393;
+    
+    return vec4(
+    clamp(color.r * 0.393 + color.g * 0.769 + color.b * 0.189, 0.0, 1.0) //makes a vec4
+    , clamp(color.r * 0.349 + color.g * 0.686 + color.b * 0.168, 0.0, 1.0)
+    , clamp(color.r * 0.272 + color.g * 0.534 + color.b * 0.131, 0.0, 1.0)
+    , color.a
+    );
+}
 
 void main(){
     
@@ -68,16 +81,16 @@ void main(){
    vec3 diffuseComponent = diffuseColor.rgb * diffuseLightColor * textureVal * cosTheta;
    vec3 ambientComponent = ambientColor.rgb * ambientLightColor *  textureVal; //for simplification we reuse the diffuse texture map for the ambient texture map
    vec3 specularComponent = specularColor.rgb * specularLightColor * pow(cosAlpha, shininess);
+   color.rgb = ambientComponent.rgb + diffuseComponent.rgb+ specularComponent.rgb;
+   color.a = opacity;
    
    if(renderMode == 2){
        //apply some filter in here!
-       color.rgb = ambientComponent.rgb;
-       
-   }else{
-       color.rgb = ambientComponent.rgb + diffuseComponent.rgb+ specularComponent.rgb;
+       //color.rgb = vec3(1,0,0);
+       color = SepiaFilter(color);
    }
 
-    color.a = opacity;
+
 }
 
 
